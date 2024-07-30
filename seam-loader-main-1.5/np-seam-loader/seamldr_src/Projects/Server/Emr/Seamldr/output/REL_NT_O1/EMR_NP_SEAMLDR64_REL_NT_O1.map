@@ -1,0 +1,152 @@
+ EMR_NP_SEAMLDR64_REL_NT_O1
+
+ Timestamp is 646c75fd (Tue May 23 11:14:53 2023)
+
+ Preferred load address is 0000000000000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00002300H EDATA32                 DATA
+ 0002:00000000 00000120H .text                   CODE
+ 0002:00000120 00001aa9H .text$mn                CODE
+ 0003:00000000 0000015cH .pdata                  DATA
+ 0004:00000000 0000001cH .rdata                  DATA
+ 0004:0000001c 00000090H .rdata$zzzdbg           DATA
+ 0004:000000ac 00000184H .xdata                  DATA
+ 0004:00000230 00000000H .edata                  DATA
+
+  Address         Publics by Value              Rva+Base               Lib:Object
+
+ 0000:00000000       __guard_flags              0000000000000000     <absolute>
+ 0000:00000000       __dynamic_value_reloc_table 0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_count      0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_table         0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_table          0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   0000000000000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   0000000000000000     <absolute>
+ 0000:00000000       __guard_iat_count          0000000000000000     <absolute>
+ 0000:00000000       __guard_fids_count         0000000000000000     <absolute>
+ 0000:00000000       __guard_longjmp_table      0000000000000000     <absolute>
+ 0000:00000000       _load_config_used          0000000000000000     <linker-defined>
+ 0001:00000008       __security_cookie          0000000000001008     SERVER64_REL_NT:GsSupport64.obj
+ 0001:00000010       GdtBasePtr                 0000000000001010     SERVER64_REL_NT:gdt64.obj
+ 0001:00000100       SeamldrData                0000000000001100     SERVER64_REL_NT:globals64.obj
+ 0001:00000300       TempGdt                    0000000000001300     SERVER64_REL_NT:globals64.obj
+ 0001:00001300       VmcsBuffer                 0000000000002300     SERVER64_REL_NT:globals64.obj
+ 0002:00000000       Entry64                    0000000000004000     SERVER64_REL_NT:Entry64.obj
+ 0002:00000110       Movdir64B                  0000000000004110     SERVER64_REL_NT:MemFill64.obj
+ 0002:00000254       Target64                   0000000000004254 f   seamldr64.obj
+ 0002:00000344       _ud2                       0000000000004344 f   SERVER64_REL_NT:Ud2_64.obj
+ 0002:00000348       PauseCpu                   0000000000004348 f   SERVER64_REL_NT:Pause64.obj
+ 0002:000003d8       MapPhysicalRange           00000000000043d8 f   SERVER64_REL_NT:AcmPaging64.obj
+ 0002:0000051c       RemoveLinearMapping        000000000000451c f   SERVER64_REL_NT:AcmPaging64.obj
+ 0002:00000548       __GSHandlerCheck           0000000000004548 f   SERVER64_REL_NT:GsSupport64.obj
+ 0002:00000548       __report_gsfailure         0000000000004548 f   SERVER64_REL_NT:GsSupport64.obj
+ 0002:00000554       __security_check_cookie    0000000000004554 f   SERVER64_REL_NT:GsSupport64.obj
+ 0002:0000056c       __security_cookie_rdrand   000000000000456c f   SERVER64_REL_NT:GsSupport64.obj
+ 0002:000005a4       __security_deadloop        00000000000045a4 f   SERVER64_REL_NT:GsSupport64.obj
+ 0002:000005b0       __security_init_cookie     00000000000045b0 f   SERVER64_REL_NT:GsSupport64.obj
+ 0002:00000600       LoadModuleCode             0000000000004600 f   SERVER64_REL_NT:SeamldrCore64.obj
+ 0002:00000628       MapModulePages             0000000000004628 f   SERVER64_REL_NT:SeamldrCore64.obj
+ 0002:000006e8       MapModuleRegion            00000000000046e8 f   SERVER64_REL_NT:SeamldrCore64.obj
+ 0002:0000086c       MapSysInfoTables           000000000000486c f   SERVER64_REL_NT:SeamldrCore64.obj
+ 0002:000008d0       MemZeroWithMovdir64B       00000000000048d0 f   SERVER64_REL_NT:SeamldrCore64.obj
+ 0002:00000960       ReadSeamExtendMsr          0000000000004960 f   SERVER64_REL_NT:SeamldrCore64.obj
+ 0002:00000974       RecordSeamIdentity         0000000000004974 f   SERVER64_REL_NT:SeamldrCore64.obj
+ 0002:000009f8       SeamldrAcm                 00000000000049f8 f   SERVER64_REL_NT:SeamldrCore64.obj
+ 0002:00001084       SetupDataRegion            0000000000005084 f   SERVER64_REL_NT:SeamldrCore64.obj
+ 0002:00001158       SetupKeyholeMapping        0000000000005158 f   SERVER64_REL_NT:SeamldrCore64.obj
+ 0002:00001250       SetupStacks                0000000000005250 f   SERVER64_REL_NT:SeamldrCore64.obj
+ 0002:0000134c       SetupSysInfoTable          000000000000534c f   SERVER64_REL_NT:SeamldrCore64.obj
+ 0002:000014c8       RdSeed64                   00000000000054c8 f   SERVER64_REL_NT:RdSeed64_64.obj
+ 0002:000014dc       __readMsr64                00000000000054dc f   SERVER64_REL_NT:ReadMsr64_64.obj
+ 0002:000014e8       __writeMsr64               00000000000054e8 f   SERVER64_REL_NT:WriteMsr64_64.obj
+ 0002:000014f4       shiftLeft64                00000000000054f4 f   SERVER64_REL_NT:ShiftLeft64.obj
+ 0002:00001500       BitScanForward64           0000000000005500 f   SERVER64_REL_NT:BitScan64.obj
+ 0002:0000152c       GetMaxPhyAddr              000000000000552c f   SERVER64_REL_NT:MaxPhyAddr64.obj
+ 0002:0000155c       GetPhyAddrMask             000000000000555c f   SERVER64_REL_NT:MaxPhyAddr64.obj
+ 0002:0000157c       SetupVmcs                  000000000000557c f   SERVER64_REL_NT:vmcs64.obj
+ 0002:000017c8       memcpy                     00000000000057c8 f   SERVER64_REL_NT:MemCpy64.obj
+ 0002:0000180c       memcpy_s                   000000000000580c f   SERVER64_REL_NT:MemCpy64.obj
+ 0002:0000188c       InitPseamldrPtCtx          000000000000588c f   SERVER64_REL_NT:SeamrrPaging64.obj
+ 0002:000018d0       MapPage                    00000000000058d0 f   SERVER64_REL_NT:SeamrrPaging64.obj
+ 0002:00001a1c       InterlockedCompareExchange8 0000000000005a1c f   SERVER64_REL_NT:CmpXchg64.obj
+ 0002:00001a24       CpuidEx                    0000000000005a24 f   SERVER64_REL_NT:CpuIdEx64.obj
+ 0002:00001a64       RdSeed16                   0000000000005a64 f   SERVER64_REL_NT:RdSeed16_64.obj
+ 0002:00001a78       RelocateImage              0000000000005a78 f   SERVER64_REL_NT:elf64.obj
+ 0002:00001aec       RelocateSection            0000000000005aec f   SERVER64_REL_NT:elf64.obj
+ 0002:00001b5c       memset                     0000000000005b5c f   SERVER64_REL_NT:MemSet64.obj
+ 0002:00001bc4       fillMemory                 0000000000005bc4 f   SERVER64_REL_NT:MemFill64.obj
+
+ entry point at        0002:00000000
+
+ Static symbols
+
+ 0001:00000000       STSRegister                0000000000001000     seamldr64.obj
+ 0002:00000074       _restored_cs               0000000000004074     SERVER64_REL_NT:Entry64.obj
+ 0002:000000a5       DoExitAC                   00000000000040a5     SERVER64_REL_NT:Entry64.obj
+ 0002:00000120       CloseTPMLocality           0000000000004120 f   seamldr64.obj
+ 0002:000001cc       ReopenTPMLocality          00000000000041cc f   seamldr64.obj
+ 0002:0000034c       Map2MBPage                 000000000000434c f   SERVER64_REL_NT:AcmPaging64.obj
+ 0002:00000394       Map4KPage                  0000000000004394 f   SERVER64_REL_NT:AcmPaging64.obj
+ 0002:000005d0       GetX2ApicId                00000000000045d0 f   SERVER64_REL_NT:SeamldrCore64.obj
+ 0002:00001b84       coreFillMemory             0000000000005b84 f   SERVER64_REL_NT:MemFill64.obj
+ 0003:00000000       $pdata$CloseTPMLocality    0000000000006000     seamldr64.obj
+ 0003:0000000c       $pdata$ReopenTPMLocality   000000000000600c     seamldr64.obj
+ 0003:00000018       $pdata$Target64            0000000000006018     seamldr64.obj
+ 0003:00000024       $pdata$MapPhysicalRange    0000000000006024     SERVER64_REL_NT:AcmPaging64.obj
+ 0003:00000030       $pdata$__GSHandlerCheck    0000000000006030     SERVER64_REL_NT:GsSupport64.obj
+ 0003:00000030       $pdata$__report_gsfailure  0000000000006030     SERVER64_REL_NT:GsSupport64.obj
+ 0003:0000003c       $pdata$__security_check_cookie 000000000000603c     SERVER64_REL_NT:GsSupport64.obj
+ 0003:00000048       $pdata$__security_cookie_rdrand 0000000000006048     SERVER64_REL_NT:GsSupport64.obj
+ 0003:00000054       $pdata$__security_deadloop 0000000000006054     SERVER64_REL_NT:GsSupport64.obj
+ 0003:00000060       $pdata$__security_init_cookie 0000000000006060     SERVER64_REL_NT:GsSupport64.obj
+ 0003:0000006c       $pdata$GetX2ApicId         000000000000606c     SERVER64_REL_NT:SeamldrCore64.obj
+ 0003:00000078       $pdata$MapModulePages      0000000000006078     SERVER64_REL_NT:SeamldrCore64.obj
+ 0003:00000084       $pdata$MapModuleRegion     0000000000006084     SERVER64_REL_NT:SeamldrCore64.obj
+ 0003:00000090       $pdata$MapSysInfoTables    0000000000006090     SERVER64_REL_NT:SeamldrCore64.obj
+ 0003:0000009c       $pdata$MemZeroWithMovdir64B 000000000000609c     SERVER64_REL_NT:SeamldrCore64.obj
+ 0003:000000a8       $pdata$RecordSeamIdentity  00000000000060a8     SERVER64_REL_NT:SeamldrCore64.obj
+ 0003:000000b4       $pdata$SeamldrAcm          00000000000060b4     SERVER64_REL_NT:SeamldrCore64.obj
+ 0003:000000c0       $pdata$SetupDataRegion     00000000000060c0     SERVER64_REL_NT:SeamldrCore64.obj
+ 0003:000000cc       $pdata$SetupKeyholeMapping 00000000000060cc     SERVER64_REL_NT:SeamldrCore64.obj
+ 0003:000000d8       $pdata$SetupStacks         00000000000060d8     SERVER64_REL_NT:SeamldrCore64.obj
+ 0003:000000e4       $pdata$SetupSysInfoTable   00000000000060e4     SERVER64_REL_NT:SeamldrCore64.obj
+ 0003:000000f0       $pdata$GetMaxPhyAddr       00000000000060f0     SERVER64_REL_NT:MaxPhyAddr64.obj
+ 0003:000000fc       $pdata$GetPhyAddrMask      00000000000060fc     SERVER64_REL_NT:MaxPhyAddr64.obj
+ 0003:00000108       $pdata$SetupVmcs           0000000000006108     SERVER64_REL_NT:vmcs64.obj
+ 0003:00000114       $pdata$MapPage             0000000000006114     SERVER64_REL_NT:SeamrrPaging64.obj
+ 0003:00000120       $pdata$CpuidEx             0000000000006120     SERVER64_REL_NT:CpuIdEx64.obj
+ 0003:0000012c       $pdata$RelocateImage       000000000000612c     SERVER64_REL_NT:elf64.obj
+ 0003:00000138       $pdata$RelocateSection     0000000000006138     SERVER64_REL_NT:elf64.obj
+ 0003:00000144       $pdata$memset              0000000000006144     SERVER64_REL_NT:MemSet64.obj
+ 0003:00000150       $pdata$coreFillMemory      0000000000006150     SERVER64_REL_NT:MemFill64.obj
+ 0004:000000ac       $unwind$ReopenTPMLocality  00000000000070ac     seamldr64.obj
+ 0004:000000ac       $unwind$CloseTPMLocality   00000000000070ac     seamldr64.obj
+ 0004:000000b8       $unwind$Target64           00000000000070b8     seamldr64.obj
+ 0004:000000c4       $unwind$MapPhysicalRange   00000000000070c4     SERVER64_REL_NT:AcmPaging64.obj
+ 0004:000000dc       $unwind$__GSHandlerCheck   00000000000070dc     SERVER64_REL_NT:GsSupport64.obj
+ 0004:000000dc       $unwind$GetPhyAddrMask     00000000000070dc     SERVER64_REL_NT:MaxPhyAddr64.obj
+ 0004:000000dc       $unwind$__security_init_cookie 00000000000070dc     SERVER64_REL_NT:GsSupport64.obj
+ 0004:000000dc       $unwind$__security_check_cookie 00000000000070dc     SERVER64_REL_NT:GsSupport64.obj
+ 0004:000000dc       $unwind$__report_gsfailure 00000000000070dc     SERVER64_REL_NT:GsSupport64.obj
+ 0004:000000dc       $unwind$__security_deadloop 00000000000070dc     SERVER64_REL_NT:GsSupport64.obj
+ 0004:000000dc       $unwind$SetupSysInfoTable  00000000000070dc     SERVER64_REL_NT:SeamldrCore64.obj
+ 0004:000000e4       $unwind$__security_cookie_rdrand 00000000000070e4     SERVER64_REL_NT:GsSupport64.obj
+ 0004:000000ec       $unwind$MemZeroWithMovdir64B 00000000000070ec     SERVER64_REL_NT:SeamldrCore64.obj
+ 0004:00000114       $unwind$GetX2ApicId        0000000000007114     SERVER64_REL_NT:SeamldrCore64.obj
+ 0004:0000011c       $unwind$MapModulePages     000000000000711c     SERVER64_REL_NT:SeamldrCore64.obj
+ 0004:00000134       $unwind$SetupStacks        0000000000007134     SERVER64_REL_NT:SeamldrCore64.obj
+ 0004:00000134       $unwind$SetupDataRegion    0000000000007134     SERVER64_REL_NT:SeamldrCore64.obj
+ 0004:00000148       $unwind$SetupKeyholeMapping 0000000000007148     SERVER64_REL_NT:SeamldrCore64.obj
+ 0004:00000160       $unwind$MapSysInfoTables   0000000000007160     SERVER64_REL_NT:SeamldrCore64.obj
+ 0004:00000168       $unwind$MapModuleRegion    0000000000007168     SERVER64_REL_NT:SeamldrCore64.obj
+ 0004:00000184       $unwind$RecordSeamIdentity 0000000000007184     SERVER64_REL_NT:SeamldrCore64.obj
+ 0004:000001a0       $unwind$SeamldrAcm         00000000000071a0     SERVER64_REL_NT:SeamldrCore64.obj
+ 0004:000001cc       $unwind$SetupVmcs          00000000000071cc     SERVER64_REL_NT:vmcs64.obj
+ 0004:000001e4       $unwind$MapPage            00000000000071e4     SERVER64_REL_NT:SeamrrPaging64.obj
+ 0004:000001fc       $unwind$CpuidEx            00000000000071fc     SERVER64_REL_NT:CpuIdEx64.obj
+ 0004:000001fc       $unwind$GetMaxPhyAddr      00000000000071fc     SERVER64_REL_NT:MaxPhyAddr64.obj
+ 0004:00000204       $unwind$RelocateImage      0000000000007204     SERVER64_REL_NT:elf64.obj
+ 0004:00000218       $unwind$RelocateSection    0000000000007218     SERVER64_REL_NT:elf64.obj
+ 0004:00000220       $unwind$memset             0000000000007220     SERVER64_REL_NT:MemSet64.obj
+ 0004:00000228       $unwind$coreFillMemory     0000000000007228     SERVER64_REL_NT:MemFill64.obj

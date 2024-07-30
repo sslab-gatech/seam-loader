@@ -1,0 +1,1 @@
+load D:\work\np_seamldr\gnr\po\pr\public\firmware.security.tdx.np-seamldr\seamldr_src\Projects\Server\Emr\Seamldr\output\ENG_TR_O1\EMR_NP_SEAMLDR64_ENG_TR_O1.exe nocode at (BIOS_ACM_base + 0x00039000)

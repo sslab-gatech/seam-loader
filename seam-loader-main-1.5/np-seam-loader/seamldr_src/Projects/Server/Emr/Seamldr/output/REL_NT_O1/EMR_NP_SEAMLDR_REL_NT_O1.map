@@ -1,0 +1,122 @@
+ EMR_NP_SEAMLDR_REL_NT_O1
+
+ Timestamp is 646c75fa (Tue May 23 11:14:50 2023)
+
+ Preferred load address is 00000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00001000H ADATA32                 DATA
+ 0001:00001000 0001d048H EDATA32                 DATA
+ 0001:0001e048 00010000H SDATA32                 DATA
+ 0002:00000000 00000058H .text                   CODE
+ 0002:00000058 0000086aH .text$mn                CODE
+ 0003:00000000 0000001cH .rdata                  DATA
+ 0003:0000001c 00000000H .edata                  DATA
+ 0003:0000001c 00000080H .rdata$zzzdbg           DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___guard_flags             00000000     <absolute>
+ 0000:00000000       ___guard_longjmp_table     00000000     <absolute>
+ 0000:00000000       ___guard_iat_table         00000000     <absolute>
+ 0000:00000000       ___guard_longjmp_count     00000000     <absolute>
+ 0000:00000000       ___guard_iat_count         00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___guard_fids_count        00000000     <absolute>
+ 0000:00000000       ___dynamic_value_reloc_table 00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___guard_fids_table        00000000     <absolute>
+ 0000:00000000       __load_config_used         00000000     <linker-defined>
+ 0001:00000000       _HeaderStart               00001000     CORE_REL_NT:Header.obj
+ 0001:000006c0       _AcmInfoTableStart         000016c0     CORE_REL_NT:Header.obj
+ 0001:000006f4       _ChipsetIdTbl              000016f4     CORE_REL_NT:Header.obj
+ 0001:00000708       _ProcessorIdTbl            00001708     CORE_REL_NT:Header.obj
+ 0001:00000724       _TpmCapabilitiesTbl        00001724     CORE_REL_NT:Header.obj
+ 0001:0000072a       _GenCoreVersionInfoTbl     0000172a     CORE_REL_NT:Header.obj
+ 0001:00001000       _ChipsetAcmType            00002000     SeamldrEntry.obj
+ 0001:00001004       _TxtErrorRegister          00002004     SeamldrEntry.obj
+ 0001:00001008       _Com64Data                 00002008     SERVER_REL_NT:Thunk64b.obj
+ 0001:000010e9       _SeamldrCom64Data          000020e9     SERVER_REL_NT:Thunk64b.obj
+ 0001:00001180       _CodeSegmentStart          00002180     CORE_REL_NT:CodeStart.obj
+ 0001:00001184       _OriginalIDTR              00002184     CORE_REL_NT:CodeStart.obj
+ 0001:0000118c       _OriginalEIP               0000218c     CORE_REL_NT:CodeStart.obj
+ 0001:00001190       _OriginalEAX               00002190     CORE_REL_NT:CodeStart.obj
+ 0001:00001198       _OriginalECX               00002198     CORE_REL_NT:CodeStart.obj
+ 0001:0000119c       _OriginalESI               0000219c     CORE_REL_NT:CodeStart.obj
+ 0001:000011a0       _OriginalEDI               000021a0     CORE_REL_NT:CodeStart.obj
+ 0001:000011a4       _OriginalEDX               000021a4     CORE_REL_NT:CodeStart.obj
+ 0001:000011ac       _OriginalCR4               000021ac     CORE_REL_NT:CodeStart.obj
+ 0001:000011b0       _OriginalES                000021b0     CORE_REL_NT:CodeStart.obj
+ 0001:000011b2       _OriginalFS                000021b2     CORE_REL_NT:CodeStart.obj
+ 0001:000011b4       _OriginalGS                000021b4     CORE_REL_NT:CodeStart.obj
+ 0001:000011b6       _OriginalSS                000021b6     CORE_REL_NT:CodeStart.obj
+ 0001:000011b8       _R_ACM                     000021b8     CORE_REL_NT:CodeStart.obj
+ 0001:000011c4       _AcmSize                   000021c4     CORE_REL_NT:CodeStart.obj
+ 0001:000011cc       _AcmBase                   000021cc     CORE_REL_NT:CodeStart.obj
+ 0001:000011d4       _AcmTop                    000021d4     CORE_REL_NT:CodeStart.obj
+ 0001:000011e8       _PSeamldrConstAsm          000021e8     CORE_REL_NT:Init64bitComArea.obj
+ 0001:00001218       _PSeamldrSizeAsm           00002218     CORE_REL_NT:Init64bitComArea.obj
+ 0001:00001220       _PSeamldrAsm               00002220     CORE_REL_NT:Init64bitComArea.obj
+ 0001:00014000       _SeamldrPagingTable        00015000     CORE_REL_NT:AcmPaging.obj
+ 0001:0001e000       ___security_cookie         0001f000     CORE_REL_NT:GsSupport.obj
+ 0001:0001e010       _shadow_stack_vesp         0001f010     CORE_REL_NT:SStackNASM.obj
+ 0001:0001e018       _GdtBasePtr                0001f018     CORE_REL_NT:gdt.obj
+ 0001:0001e038       _ErrCtx                    0001f038     CORE_REL_NT:AcmErr.obj
+ 0001:0001e044       _AcmErrorHandlerPtr        0001f044     CORE_REL_NT:AcmErr.obj
+ 0001:0001e048       _stackStart                0001f048     Stack.obj
+ 0002:00000000       __penter                   00030000     CORE_REL_NT:SStackNASM.obj
+ 0002:00000018       __pexit                    00030018     CORE_REL_NT:SStackNASM.obj
+ 0002:00000058       _ProjectAcmEntryPoint      00030058 f   SeamldrEntry.obj
+ 0002:0000009f       _SeamldrThunk64            0003009f     SERVER_REL_NT:Thunk64b.obj
+ 0002:000000ec       _AcmEntryPoint             000300ec     CORE_REL_NT:CodeStart.obj
+ 0002:000002ba       _Init64bitComArea          000302ba f   CORE_REL_NT:Init64bitComArea.obj
+ 0002:00000378       _EstablishSeamldrPaging    00030378 f   CORE_REL_NT:AcmPaging.obj
+ 0002:0000067c       @__security_check_cookie@4 0003067c f   CORE_REL_NT:GsSupport.obj
+ 0002:00000689       ___report_gsfailure        00030689 f   CORE_REL_NT:GsSupport.obj
+ 0002:0000068e       ___security_cookie_rdrand  0003068e f   CORE_REL_NT:GsSupport.obj
+ 0002:000006be       ___security_deadloop       000306be f   CORE_REL_NT:GsSupport.obj
+ 0002:000006c5       ___security_init_cookie    000306c5 f   CORE_REL_NT:GsSupport.obj
+ 0002:000006d8       _Update_CRx                000306d8 f   CORE_REL_NT:CR.obj
+ 0002:000006ea       _commonAcmEntryPoint       000306ea f   CORE_REL_NT:commonAcmEntry.obj
+ 0002:00000732       _fillMemory                00030732 f   CORE_REL_NT:MemFill.obj
+ 0002:00000764       ___readMsr                 00030764 f   CORE_REL_NT:Msr.obj
+ 0002:00000788       ___readMsr64               00030788 f   CORE_REL_NT:Msr.obj
+ 0002:00000792       ___writeMsr                00030792 f   CORE_REL_NT:Msr.obj
+ 0002:000007a4       __ud2                      000307a4 f   CORE_REL_NT:Ud2.obj
+ 0002:000007a7       _RdSeed32                  000307a7 f   CORE_REL_NT:RdSeed32.obj
+ 0002:000007bd       ___ErrorHandler            000307bd f   CORE_REL_NT:AcmErr.obj
+ 0002:000007c6       _get_esp                   000307c6 f   CORE_REL_NT:MemCpyProtected.obj
+ 0002:000007fd       _perform_ebp_checks        000307fd f   CORE_REL_NT:MemCpyProtected.obj
+ 0002:00000880       _memcpy                    00030880 f   CORE_REL_NT:MemCpy.obj
+
+ entry point at        0002:000000ec
+
+ Static symbols
+
+ 0001:00001194       OriginalEBX                00002194     CORE_REL_NT:CodeStart.obj
+ 0001:000011a8       OriginalCR3                000021a8     CORE_REL_NT:CodeStart.obj
+ 0002:00000031       skip_check                 00030031     CORE_REL_NT:SStackNASM.obj
+ 0002:00000034       update_crash_register      00030034     CORE_REL_NT:SStackNASM.obj
+ 0002:00000034       error                      00030034     CORE_REL_NT:SStackNASM.obj
+ 0002:0000003f       ltReset                    0003003f     CORE_REL_NT:SStackNASM.obj
+ 0002:00000049       ..@96.begin                00030049     CORE_REL_NT:SStackNASM.obj
+ 0002:00000055       deadLoop                   00030055     CORE_REL_NT:SStackNASM.obj
+ 0002:00000055       ..@96.break                00030055     CORE_REL_NT:SStackNASM.obj
+ 0002:000000ac       LongMode                   000300ac     SERVER_REL_NT:Thunk64b.obj
+ 0002:000000d4       ..@98.strucstart           000300d4     CORE_REL_NT:CodeStart.obj
+ 0002:0000011c       _IS_ENTERACCS              0003011c     CORE_REL_NT:CodeStart.obj
+ 0002:00000179       _BIOS_DONE_LOCKED          00030179     CORE_REL_NT:CodeStart.obj
+ 0002:00000192       FixupLoop                  00030192     CORE_REL_NT:CodeStart.obj
+ 0002:000001b1       ..@109.ifnot               000301b1     CORE_REL_NT:CodeStart.obj
+ 0002:000001b3       ..@107.ifnot               000301b3     CORE_REL_NT:CodeStart.obj
+ 0002:0000029f       ..@114.begin               0003029f     CORE_REL_NT:CodeStart.obj
+ 0002:000002aa       ..@114.break               000302aa     CORE_REL_NT:CodeStart.obj
+ 0002:000002b0       OPENED_PRIVATE_SPACE       000302b0     CORE_REL_NT:CodeStart.obj
+ 0002:000005f5       _IsCodeAcmPage             000305f5 f   CORE_REL_NT:AcmPaging.obj
+ 0002:00000619       _Map4KPage                 00030619 f   CORE_REL_NT:AcmPaging.obj
+ 0002:00000668       _MapPagingStructure        00030668 f   CORE_REL_NT:AcmPaging.obj
+ 0002:000006f4       _coreFillMemory            000306f4 f   CORE_REL_NT:MemFill.obj
+ 0002:000007c3       _get_ebp                   000307c3 f   CORE_REL_NT:MemCpyProtected.obj
+ 0002:000007c9       _get_previous_ebp          000307c9 f   CORE_REL_NT:MemCpyProtected.obj
+ 0002:000007d3       _get_stack_base            000307d3 f   CORE_REL_NT:MemCpyProtected.obj
+ 0002:000007dc       _is_addr_in_stack          000307dc f   CORE_REL_NT:MemCpyProtected.obj
