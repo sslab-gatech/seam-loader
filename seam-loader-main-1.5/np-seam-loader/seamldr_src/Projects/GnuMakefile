@@ -698,7 +698,7 @@ $(PROJ_NASM_OBJ64):
 ifeq ($(PLATFORM),SERVER)
 $(ACM_EXE): $(CORE_LIB) $(SERVER_LIB) $(IPP_LIB) $(PROJ_C_OBJ) $(PROJ_ASM_OBJ) $(PROJ_NASM_OBJ)
 	$(info ==> Running uncrustify on source files (.c/.h)...)
-	# $(Q)$(STYLETOOL) --no-backup -q -c $(STYLECFG) $(FILES_TO_STYLE)
+# 	$(Q)$(STYLETOOL) --no-backup -q -c $(STYLECFG) $(FILES_TO_STYLE)
 	$(info ==> Creating $(notdir $@)..........)
 	$(Q)$(LINK) $(LNK_FLAGS) $(SERVER_LIB) $(CORE_LIB) $(IPP_LIB) $(PROJ_C_OBJ) $(PROJ_ASM_OBJ) $(PROJ_NASM_OBJ)
 	$(Q)$(call FixPath,cd $(OBJ_DIR))
@@ -715,7 +715,7 @@ endif
 else
 $(ACM_EXE): $(CORE_LIB) $(CLIENT_LIB) $(IPP_LIB) $(PROJ_C_OBJ) $(PROJ_ASM_OBJ)	$(PROJ_NASM_OBJ)
 	$(info ==> Running uncrustify on source files (.c/.h)...)
-	# $(Q)$(STYLETOOL) --no-backup -q -c $(STYLECFG) $(FILES_TO_STYLE)
+# 	$(Q)$(STYLETOOL) --no-backup -q -c $(STYLECFG) $(FILES_TO_STYLE)
 	$(info ==> Creating $(notdir $@)..........)
 	$(Q)$(LINK) $(LNK_FLAGS) $(CLIENT_LIB) $(CORE_LIB) $(IPP_LIB) $(PROJ_C_OBJ) $(PROJ_ASM_OBJ) $(PROJ_NASM_OBJ)
 	$(Q)$(call FixPath,cd $(OBJ_DIR))	
