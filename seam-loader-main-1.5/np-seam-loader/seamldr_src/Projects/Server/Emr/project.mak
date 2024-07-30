@@ -17,7 +17,7 @@
 #
 PROJECT      := EMR
 PROJECT_DIR  := $(dir $(abspath $(lastword $(MAKEFILE_LIST))))
-ACM_ROOT_DIR := $(realpath $(PROJECT_DIR)/../../..)
+ACM_ROOT_DIR := $(subst /Projects/Server/Emr/Seamldr/..\,,$(PROJECT_DIR))
 
 # TODO: Add additional project-specific vars here
 
