@@ -752,7 +752,7 @@ endif
 ifeq ($(MKF_64BIT_CODE_SUPPORT),1)
 $(ACM_BIN): directories $(ACM_EXE) $(ACM64_EXE)
 	$(info ==> Creating $(notdir $@)..........)	
-	$(Q)$(call py -3 putPseamldr.py $(OBJ_DIR)\$(ACM_NAME).map $(OBJ_DIR)\$(ACM_NAME).exe pseamldr.so pseamldr.so.consts)
+	@py -3 putPseamldr.py $(OBJ_DIR)\$(ACM_NAME).map $(OBJ_DIR)\$(ACM_NAME).exe pseamldr.so pseamldr.so.consts
 	$(Q)$(call FixPath,cd $(OBJ_DIR))
 	$(Q)$(call FixPath,$(ACM_PE2BINx) $(ACM_PE2BINx_FLAGS) $(ACM_EXE) $@ $ -EXE64bit:$(ACM64_EXE) > $(OBJ_DIR)/build64.log)
 	$(Q)$(call FixPath,type $(OBJ_DIR)/build64.log)
