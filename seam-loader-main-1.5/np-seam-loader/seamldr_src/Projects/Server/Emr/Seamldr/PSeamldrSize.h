@@ -1,1 +1,0 @@
-#define PSEAMLDR_SIZE 73728 
