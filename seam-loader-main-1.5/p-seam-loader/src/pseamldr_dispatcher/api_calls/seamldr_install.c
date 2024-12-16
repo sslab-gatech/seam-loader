@@ -23,7 +23,8 @@
 #include "data_structures/pseamldr_data_types.h"
 #include "memory_handlers/seam_memory_map.h"
 #include "data_structures/seam_vmcs_setup.h"
-#include "crypto/intel_key_hash.h"
+// #include "crypto/intel_key_hash.h"
+#include "crypto/opentdx_key_hash.h"
 #include "helpers/elf.h"
 
 static uint64_t required_seam_module_code_region_size(seamldr_params_t* seamldr_params)
@@ -205,12 +206,20 @@ static api_error_type verify_manifest(pseamldr_data_t* pseamldr_data, seamldr_pa
     lfence();
 
     // Compute the SHA-384 hash of the SEAM module signers key (TMP_SIGSTRUCT.MODULUS).
-    // If the result is not equal to the INTEL_SIGNER_KEY_HASH constant, then set ERROR_CODE = EBADSIG
-    IF_RARE (!compute_and_verify_hash(seam_sigstruct->modulus, SIGSTRUCT_MODULUS_SIZE, intel_key_hash))
+    // If the result is not equal to the OPENTDX_SIGNER_KEY_HASH constant, then set ERROR_CODE = EBADSIG
+    IF_RARE (!compute_and_verify_hash(seam_sigstruct->modulus, SIGSTRUCT_MODULUS_SIZE, opentdx_key_hash))
     {
         TDX_ERROR("Incorrect SEAM module signers key (modulus)!\n");
         return PSEAMLDR_EBADSIG;
     }
+
+    // // Compute the SHA-384 hash of the SEAM module signers key (TMP_SIGSTRUCT.MODULUS).
+    // // If the result is not equal to the INTEL_SIGNER_KEY_HASH constant, then set ERROR_CODE = EBADSIG
+    // IF_RARE (!compute_and_verify_hash(seam_sigstruct->modulus, SIGSTRUCT_MODULUS_SIZE, intel_key_hash))
+    // {
+    //     TDX_ERROR("Incorrect SEAM module signers key (modulus)!\n");
+    //     return PSEAMLDR_EBADSIG;
+    // }
 
     // If the new module is declared as debug-signed (i.e. TMP_SIGSTRUCT.MODULE_TYPE[31] == 1),
     // but the NPK_ACTIVE bit in SGX_DEBUG_MODE MSR (0x503) is not set, then set ERROR_CODE = EBADSIG
