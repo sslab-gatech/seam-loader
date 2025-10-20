@@ -14,6 +14,7 @@
 #ifndef SRC_COMMON_ACCESSORS_IA32_ACCESSORS_H_
 #define SRC_COMMON_ACCESSORS_IA32_ACCESSORS_H_
 
+#include "../data_structures/pseamldr_data_offsets.h"
 #include "../../../include/pseamldr_basic_defs.h"
 #include "../../../include/pseamldr_basic_types.h"
 #include "x86_defs/x86_defs.h"
@@ -169,10 +170,73 @@ _STATIC_INLINE_ uint64_t bit_scan_reverse64(uint64_t mask)
     return msb_position;
 }
 
+_STATIC_INLINE_ bool_t movdir64b_supported()
+{
+    uint32_t eax, ebx, ecx, edx;
+    ia32_cpuid(0, 0, &eax, &ebx, &ecx, &edx);
+    if (eax < 7)
+        return false;
+
+    ia32_cpuid(7, 0, &eax, &ebx, &ecx, &edx);
+    return !!(ecx & (1UL << 28));
+}
+
 _STATIC_INLINE_ void movdir64b(const void *src, uint64_t dst)
 {
-    _ASM_VOLATILE_ (".byte  0x66, 0x0F, 0x38, 0xF8," /*movdir64b op*/ "0x37;" /*ModRM = RDI->RSI*/
-                    : : "D"(src), "S"(dst) : "memory" );
+    bool_t movdir_checked, movdir_supported;
+
+    _ASM_VOLATILE_("movb %%gs:%c1, %0\n\t"
+        : "=r"(movdir_checked) : "i"(PSEAMLDR_DATA_VMM_GPRS_STATE_OFFSET+128) : );
+
+    if (movdir_checked)
+        _ASM_VOLATILE_("movb %%gs:%c1, %0\n\t"
+            : "=r"(movdir_supported) : "i"(PSEAMLDR_DATA_VMM_GPRS_STATE_OFFSET+129) : );
+    else {
+        movdir_supported = movdir64b_supported();
+        _ASM_VOLATILE_(
+            "movb $0x1,  %%gs:%c1\n\t"
+            "movb %0,  %%gs:%c2\n\t"
+            : : "r"(movdir_supported), "i"(PSEAMLDR_DATA_VMM_GPRS_STATE_OFFSET+128), "i"(PSEAMLDR_DATA_VMM_GPRS_STATE_OFFSET+129)
+            : "memory"
+        );
+    }
+
+    if (movdir_supported)
+        _ASM_VOLATILE_ (".byte  0x66, 0x0F, 0x38, 0xF8," /*movdir64b op*/ "0x37;" /*ModRM = RDI->RSI*/
+                        : : "D"(src), "S"(dst) : "memory" );
+    else {
+        _ASM_VOLATILE_ (
+            "push %%rax\n\t"
+            "mov (%1), %%rax\n\t"
+            "mov %%rax, (%0)\n\t"
+
+            "mov 8(%1), %%rax\n\t"
+            "mov %%rax, 8(%0)\n\t"
+
+            "mov 16(%1), %%rax\n\t"
+            "mov %%rax, 16(%0)\n\t"
+
+            "mov 24(%1), %%rax\n\t"
+            "mov %%rax, 24(%0)\n\t"
+
+            "mov 32(%1), %%rax\n\t"
+            "mov %%rax, 32(%0)\n\t"
+
+            "mov 40(%1), %%rax\n\t"
+            "mov %%rax, 40(%0)\n\t"
+
+            "mov 48(%1), %%rax\n\t"
+            "mov %%rax, 48(%0)\n\t"
+
+            "mov 56(%1), %%rax\n\t"
+            "mov %%rax, 56(%0)\n\t"
+
+            "pop %%rax\n\t"
+            :
+            : "r"(dst), "r"(src)
+            : "rax", "memory"
+        );
+    }
 }
 
 _STATIC_INLINE_ void lfence(void)
@@ -192,7 +256,8 @@ _STATIC_INLINE_ void sfence(void)
 
 _STATIC_INLINE_ void serialize(void)
 {
-    _ASM_VOLATILE_ (".byte  0x0F, 0x01, 0xE8" /*SERIALIZE op*/ : : : "memory");
+    // serialize instruction has no effect in OpenTDX
+    // _ASM_VOLATILE_ (".byte  0x0F, 0x01, 0xE8" /*SERIALIZE op*/ : : : "memory");
 }
 
 

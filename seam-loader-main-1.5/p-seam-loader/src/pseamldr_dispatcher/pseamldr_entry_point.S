@@ -42,6 +42,9 @@ pseamldr_entry_point:
     movq %r14,  %gs:PSEAMLDR_DATA_VMM_GPRS_STATE_OFFSET+112
     movq %r15,  %gs:PSEAMLDR_DATA_VMM_GPRS_STATE_OFFSET+120
 
+    movb $0x0,  %gs:PSEAMLDR_DATA_VMM_GPRS_STATE_OFFSET+128 // movdir_checked
+    movb $0x0,  %gs:PSEAMLDR_DATA_VMM_GPRS_STATE_OFFSET+129 // movdir_supported
+
     /**
      * Clean the VMM-controlled content from the GPR's to prevent speculative-based attacks
      */
