@@ -1,13 +1,13 @@
  EMR_NP_SEAMLDR_ENG_TR_O1
 
- Timestamp is 66c70603 (Thu Aug 22 02:33:55 2024)
+ Timestamp is 68f679f6 (Mon Oct 20 11:05:42 2025)
 
  Preferred load address is 00000000
 
  Start         Length     Name                   Class
  0001:00000000 00001000H ADATA32                 DATA
- 0001:00001000 0001d118H EDATA32                 DATA
- 0001:0001e118 00010000H SDATA32                 DATA
+ 0001:00001000 00025118H EDATA32                 DATA
+ 0001:00026118 00010000H SDATA32                 DATA
  0002:00000000 00000058H .text                   CODE
  0002:00000058 00000ca5H .text$mn                CODE
  0003:00000000 00000054H .rdata                  DATA
@@ -57,55 +57,55 @@
  0001:000011e8       _PSeamldrConstAsm          000021e8     CORE_ENG_TR:Init64bitComArea.obj
  0001:00001218       _PSeamldrSizeAsm           00002218     CORE_ENG_TR:Init64bitComArea.obj
  0001:00001220       _PSeamldrAsm               00002220     CORE_ENG_TR:Init64bitComArea.obj
- 0001:00013220       ??_C@_0BK@IOPEGNDA@OriginalIDTR?5Limit?3?50x?$CFx?6?$AA@IMHBAIGO@ 00014220     CORE_ENG_TR:Init64bitComArea.obj
- 0001:00014000       _SeamldrPagingTable        00015000     CORE_ENG_TR:AcmPaging.obj
- 0001:0001e000       _shadow_stack_vesp         0001f000     CORE_ENG_TR:SStackNASM.obj
- 0001:0001e008       ??_C@_0DL@EEOEKMDB@Safe?5fill?5operation?3?5Stack?5targe@IMHBAIGO@ 0001f008     CORE_ENG_TR:MemFill.obj
- 0001:0001e044       _nib                       0001f044     CORE_ENG_TR:Trace.obj
- 0001:0001e054       _traceRoutines             0001f054     CORE_ENG_TR:Trace.obj
- 0001:0001e070       ??_C@_01FGNFDNOH@?$CF?$AA@IMHBAIGO@ 0001f070     CORE_ENG_TR:Trace.obj
- 0001:0001e074       ___security_cookie         0001f074     CORE_ENG_TR:GsSupport.obj
- 0001:0001e078       _GdtBasePtr                0001f078     CORE_ENG_TR:gdt.obj
- 0001:0001e098       _ErrCtx                    0001f098     CORE_ENG_TR:AcmErr.obj
- 0001:0001e0a4       _AcmErrorHandlerPtr        0001f0a4     CORE_ENG_TR:AcmErr.obj
- 0001:0001e0b4       ??_C@_0DL@HBBLPBDE@Safe?5copy?5operation?3?5Stack?5targe@IMHBAIGO@ 0001f0b4     CORE_ENG_TR:CopyDataX.obj
- 0001:0001e0f0       _SioSupportTab             0001f0f0     CORE_ENG_TR:InitSio.obj
- 0001:0001e113       _traceControls             0001f113     CORE_ENG_TR:printf.obj
- 0001:0001e118       _stackStart                0001f118     Stack.obj
- 0002:00000000       __penter                   00030000     CORE_ENG_TR:SStackNASM.obj
- 0002:00000018       __pexit                    00030018     CORE_ENG_TR:SStackNASM.obj
- 0002:00000058       _ProjectAcmEntryPoint      00030058 f   SeamldrEntry.obj
- 0002:0000008b       _SeamldrThunk64            0003008b     SERVER_ENG_TR:Thunk64b.obj
- 0002:000000d8       _AcmEntryPoint             000300d8     CORE_ENG_TR:CodeStart.obj
- 0002:000002bd       _Init64bitComArea          000302bd f   CORE_ENG_TR:Init64bitComArea.obj
- 0002:00000389       _EstablishSeamldrPaging    00030389 f   CORE_ENG_TR:AcmPaging.obj
- 0002:0000068d       _Update_CRx                0003068d f   CORE_ENG_TR:CR.obj
- 0002:0000069f       _commonAcmEntryPoint       0003069f f   CORE_ENG_TR:commonAcmEntry.obj
- 0002:000006e7       _fillMemory                000306e7 f   CORE_ENG_TR:MemFill.obj
- 0002:0000072e       _NumToStr                  0003072e f   CORE_ENG_TR:Trace.obj
- 0002:0000075c       _NumToStr8                 0003075c f   CORE_ENG_TR:Trace.obj
- 0002:00000784       _Trace                     00030784 f   CORE_ENG_TR:Trace.obj
- 0002:000007ae       _TraceWriteString          000307ae f   CORE_ENG_TR:Trace.obj
- 0002:000007bf       ___Trace                   000307bf f   CORE_ENG_TR:Trace.obj
- 0002:000009db       ___readMsr                 000309db f   CORE_ENG_TR:Msr.obj
- 0002:000009ff       ___readMsr64               000309ff f   CORE_ENG_TR:Msr.obj
- 0002:00000a09       ___writeMsr                00030a09 f   CORE_ENG_TR:Msr.obj
- 0002:00000a1b       _calibrateTsc64            00030a1b f   CORE_ENG_TR:Msr.obj
- 0002:00000a3d       _readTsc64                 00030a3d f   CORE_ENG_TR:Msr.obj
- 0002:00000a40       ___security_cookie_rdrand  00030a40 f   CORE_ENG_TR:GsSupport.obj
- 0002:00000a70       ___security_deadloop       00030a70 f   CORE_ENG_TR:GsSupport.obj
- 0002:00000a77       ___security_init_cookie    00030a77 f   CORE_ENG_TR:GsSupport.obj
- 0002:00000a8a       ___ErrorHandler            00030a8a f   CORE_ENG_TR:AcmErr.obj
- 0002:00000a93       _get_esp                   00030a93 f   CORE_ENG_TR:MemCpyProtected.obj
- 0002:00000aca       _perform_ebp_checks        00030aca f   CORE_ENG_TR:MemCpyProtected.obj
- 0002:00000b4d       _memcpy                    00030b4d f   CORE_ENG_TR:MemCpy.obj
- 0002:00000b8f       _ComSerialOut              00030b8f f   CORE_ENG_TR:Com.obj
- 0002:00000c23       _copyMemory                00030c23 f   CORE_ENG_TR:CopyDataX.obj
- 0002:00000c6a       __allmul                   00030c6a f   CORE_ENG_TR:Multiply.obj
- 0002:00000c8b       __ud2                      00030c8b f   CORE_ENG_TR:Ud2.obj
- 0002:00000c8e       _RdSeed32                  00030c8e f   CORE_ENG_TR:RdSeed32.obj
- 0002:00000ca4       _Wait1ms                   00030ca4 f   CORE_ENG_TR:CoreTime.obj
- 0002:00000cd9       _InitSio                   00030cd9 f   CORE_ENG_TR:InitSio.obj
+ 0001:0001b220       ??_C@_0BK@IOPEGNDA@OriginalIDTR?5Limit?3?50x?$CFx?6?$AA@IMHBAIGO@ 0001c220     CORE_ENG_TR:Init64bitComArea.obj
+ 0001:0001c000       _SeamldrPagingTable        0001d000     CORE_ENG_TR:AcmPaging.obj
+ 0001:00026000       _shadow_stack_vesp         00027000     CORE_ENG_TR:SStackNASM.obj
+ 0001:00026008       ??_C@_0DL@EEOEKMDB@Safe?5fill?5operation?3?5Stack?5targe@IMHBAIGO@ 00027008     CORE_ENG_TR:MemFill.obj
+ 0001:00026044       _nib                       00027044     CORE_ENG_TR:Trace.obj
+ 0001:00026054       _traceRoutines             00027054     CORE_ENG_TR:Trace.obj
+ 0001:00026070       ??_C@_01FGNFDNOH@?$CF?$AA@IMHBAIGO@ 00027070     CORE_ENG_TR:Trace.obj
+ 0001:00026074       ___security_cookie         00027074     CORE_ENG_TR:GsSupport.obj
+ 0001:00026078       _GdtBasePtr                00027078     CORE_ENG_TR:gdt.obj
+ 0001:00026098       _ErrCtx                    00027098     CORE_ENG_TR:AcmErr.obj
+ 0001:000260a4       _AcmErrorHandlerPtr        000270a4     CORE_ENG_TR:AcmErr.obj
+ 0001:000260b4       ??_C@_0DL@HBBLPBDE@Safe?5copy?5operation?3?5Stack?5targe@IMHBAIGO@ 000270b4     CORE_ENG_TR:CopyDataX.obj
+ 0001:000260f0       _SioSupportTab             000270f0     CORE_ENG_TR:InitSio.obj
+ 0001:00026113       _traceControls             00027113     CORE_ENG_TR:printf.obj
+ 0001:00026118       _stackStart                00027118     Stack.obj
+ 0002:00000000       __penter                   00038000     CORE_ENG_TR:SStackNASM.obj
+ 0002:00000018       __pexit                    00038018     CORE_ENG_TR:SStackNASM.obj
+ 0002:00000058       _ProjectAcmEntryPoint      00038058 f   SeamldrEntry.obj
+ 0002:0000008b       _SeamldrThunk64            0003808b     SERVER_ENG_TR:Thunk64b.obj
+ 0002:000000d8       _AcmEntryPoint             000380d8     CORE_ENG_TR:CodeStart.obj
+ 0002:000002bd       _Init64bitComArea          000382bd f   CORE_ENG_TR:Init64bitComArea.obj
+ 0002:00000389       _EstablishSeamldrPaging    00038389 f   CORE_ENG_TR:AcmPaging.obj
+ 0002:0000068d       _Update_CRx                0003868d f   CORE_ENG_TR:CR.obj
+ 0002:0000069f       _commonAcmEntryPoint       0003869f f   CORE_ENG_TR:commonAcmEntry.obj
+ 0002:000006e7       _fillMemory                000386e7 f   CORE_ENG_TR:MemFill.obj
+ 0002:0000072e       _NumToStr                  0003872e f   CORE_ENG_TR:Trace.obj
+ 0002:0000075c       _NumToStr8                 0003875c f   CORE_ENG_TR:Trace.obj
+ 0002:00000784       _Trace                     00038784 f   CORE_ENG_TR:Trace.obj
+ 0002:000007ae       _TraceWriteString          000387ae f   CORE_ENG_TR:Trace.obj
+ 0002:000007bf       ___Trace                   000387bf f   CORE_ENG_TR:Trace.obj
+ 0002:000009db       ___readMsr                 000389db f   CORE_ENG_TR:Msr.obj
+ 0002:000009ff       ___readMsr64               000389ff f   CORE_ENG_TR:Msr.obj
+ 0002:00000a09       ___writeMsr                00038a09 f   CORE_ENG_TR:Msr.obj
+ 0002:00000a1b       _calibrateTsc64            00038a1b f   CORE_ENG_TR:Msr.obj
+ 0002:00000a3d       _readTsc64                 00038a3d f   CORE_ENG_TR:Msr.obj
+ 0002:00000a40       ___security_cookie_rdrand  00038a40 f   CORE_ENG_TR:GsSupport.obj
+ 0002:00000a70       ___security_deadloop       00038a70 f   CORE_ENG_TR:GsSupport.obj
+ 0002:00000a77       ___security_init_cookie    00038a77 f   CORE_ENG_TR:GsSupport.obj
+ 0002:00000a8a       ___ErrorHandler            00038a8a f   CORE_ENG_TR:AcmErr.obj
+ 0002:00000a93       _get_esp                   00038a93 f   CORE_ENG_TR:MemCpyProtected.obj
+ 0002:00000aca       _perform_ebp_checks        00038aca f   CORE_ENG_TR:MemCpyProtected.obj
+ 0002:00000b4d       _memcpy                    00038b4d f   CORE_ENG_TR:MemCpy.obj
+ 0002:00000b8f       _ComSerialOut              00038b8f f   CORE_ENG_TR:Com.obj
+ 0002:00000c23       _copyMemory                00038c23 f   CORE_ENG_TR:CopyDataX.obj
+ 0002:00000c6a       __allmul                   00038c6a f   CORE_ENG_TR:Multiply.obj
+ 0002:00000c8b       __ud2                      00038c8b f   CORE_ENG_TR:Ud2.obj
+ 0002:00000c8e       _RdSeed32                  00038c8e f   CORE_ENG_TR:RdSeed32.obj
+ 0002:00000ca4       _Wait1ms                   00038ca4 f   CORE_ENG_TR:CoreTime.obj
+ 0002:00000cd9       _InitSio                   00038cd9 f   CORE_ENG_TR:InitSio.obj
 
  entry point at        0002:000000d8
 
@@ -113,36 +113,36 @@
 
  0001:00001194       OriginalEBX                00002194     CORE_ENG_TR:CodeStart.obj
  0001:000011a8       OriginalCR3                000021a8     CORE_ENG_TR:CodeStart.obj
- 0001:0001e0a8       _ComAddr                   0001f0a8     CORE_ENG_TR:Com.obj
- 0001:0001e0ac       _LineStat                  0001f0ac     CORE_ENG_TR:Com.obj
- 0001:0001e0b0       _Once                      0001f0b0     CORE_ENG_TR:Com.obj
- 0001:0001e110       _saveLcr                   0001f110     CORE_ENG_TR:InitSio.obj
- 0001:0001e111       _saveDll                   0001f111     CORE_ENG_TR:InitSio.obj
- 0001:0001e112       _saveDlh                   0001f112     CORE_ENG_TR:InitSio.obj
- 0002:00000031       skip_check                 00030031     CORE_ENG_TR:SStackNASM.obj
- 0002:00000034       update_crash_register      00030034     CORE_ENG_TR:SStackNASM.obj
- 0002:00000034       error                      00030034     CORE_ENG_TR:SStackNASM.obj
- 0002:0000003f       ltReset                    0003003f     CORE_ENG_TR:SStackNASM.obj
- 0002:00000049       ..@96.begin                00030049     CORE_ENG_TR:SStackNASM.obj
- 0002:00000055       ..@96.break                00030055     CORE_ENG_TR:SStackNASM.obj
- 0002:00000055       deadLoop                   00030055     CORE_ENG_TR:SStackNASM.obj
- 0002:00000098       LongMode                   00030098     SERVER_ENG_TR:Thunk64b.obj
- 0002:000000c0       ..@98.strucstart           000300c0     CORE_ENG_TR:CodeStart.obj
- 0002:00000108       _IS_ENTERACCS              00030108     CORE_ENG_TR:CodeStart.obj
- 0002:00000165       _BIOS_DONE_LOCKED          00030165     CORE_ENG_TR:CodeStart.obj
- 0002:0000017e       FixupLoop                  0003017e     CORE_ENG_TR:CodeStart.obj
- 0002:0000019d       ..@109.ifnot               0003019d     CORE_ENG_TR:CodeStart.obj
- 0002:0000019f       ..@107.ifnot               0003019f     CORE_ENG_TR:CodeStart.obj
- 0002:000002a2       ..@114.begin               000302a2     CORE_ENG_TR:CodeStart.obj
- 0002:000002ad       ..@114.break               000302ad     CORE_ENG_TR:CodeStart.obj
- 0002:000002b3       OPENED_PRIVATE_SPACE       000302b3     CORE_ENG_TR:CodeStart.obj
- 0002:00000606       _IsCodeAcmPage             00030606 f   CORE_ENG_TR:AcmPaging.obj
- 0002:0000062a       _Map4KPage                 0003062a f   CORE_ENG_TR:AcmPaging.obj
- 0002:00000679       _MapPagingStructure        00030679 f   CORE_ENG_TR:AcmPaging.obj
- 0002:000006a9       _coreFillMemory            000306a9 f   CORE_ENG_TR:MemFill.obj
- 0002:00000a90       _get_ebp                   00030a90 f   CORE_ENG_TR:MemCpyProtected.obj
- 0002:00000a96       _get_previous_ebp          00030a96 f   CORE_ENG_TR:MemCpyProtected.obj
- 0002:00000aa0       _get_stack_base            00030aa0 f   CORE_ENG_TR:MemCpyProtected.obj
- 0002:00000aa9       _is_addr_in_stack          00030aa9 f   CORE_ENG_TR:MemCpyProtected.obj
- 0002:00000b4d       _coreCopyMemory            00030b4d f   CORE_ENG_TR:CopyDataX.obj
- 0002:00000be6       _InitializeComPort         00030be6 f   CORE_ENG_TR:Com.obj
+ 0001:000260a8       _ComAddr                   000270a8     CORE_ENG_TR:Com.obj
+ 0001:000260ac       _LineStat                  000270ac     CORE_ENG_TR:Com.obj
+ 0001:000260b0       _Once                      000270b0     CORE_ENG_TR:Com.obj
+ 0001:00026110       _saveLcr                   00027110     CORE_ENG_TR:InitSio.obj
+ 0001:00026111       _saveDll                   00027111     CORE_ENG_TR:InitSio.obj
+ 0001:00026112       _saveDlh                   00027112     CORE_ENG_TR:InitSio.obj
+ 0002:00000031       skip_check                 00038031     CORE_ENG_TR:SStackNASM.obj
+ 0002:00000034       update_crash_register      00038034     CORE_ENG_TR:SStackNASM.obj
+ 0002:00000034       error                      00038034     CORE_ENG_TR:SStackNASM.obj
+ 0002:0000003f       ltReset                    0003803f     CORE_ENG_TR:SStackNASM.obj
+ 0002:00000049       ..@96.begin                00038049     CORE_ENG_TR:SStackNASM.obj
+ 0002:00000055       ..@96.break                00038055     CORE_ENG_TR:SStackNASM.obj
+ 0002:00000055       deadLoop                   00038055     CORE_ENG_TR:SStackNASM.obj
+ 0002:00000098       LongMode                   00038098     SERVER_ENG_TR:Thunk64b.obj
+ 0002:000000c0       ..@98.strucstart           000380c0     CORE_ENG_TR:CodeStart.obj
+ 0002:00000108       _IS_ENTERACCS              00038108     CORE_ENG_TR:CodeStart.obj
+ 0002:00000165       _BIOS_DONE_LOCKED          00038165     CORE_ENG_TR:CodeStart.obj
+ 0002:0000017e       FixupLoop                  0003817e     CORE_ENG_TR:CodeStart.obj
+ 0002:0000019d       ..@109.ifnot               0003819d     CORE_ENG_TR:CodeStart.obj
+ 0002:0000019f       ..@107.ifnot               0003819f     CORE_ENG_TR:CodeStart.obj
+ 0002:000002a2       ..@114.begin               000382a2     CORE_ENG_TR:CodeStart.obj
+ 0002:000002ad       ..@114.break               000382ad     CORE_ENG_TR:CodeStart.obj
+ 0002:000002b3       OPENED_PRIVATE_SPACE       000382b3     CORE_ENG_TR:CodeStart.obj
+ 0002:00000606       _IsCodeAcmPage             00038606 f   CORE_ENG_TR:AcmPaging.obj
+ 0002:0000062a       _Map4KPage                 0003862a f   CORE_ENG_TR:AcmPaging.obj
+ 0002:00000679       _MapPagingStructure        00038679 f   CORE_ENG_TR:AcmPaging.obj
+ 0002:000006a9       _coreFillMemory            000386a9 f   CORE_ENG_TR:MemFill.obj
+ 0002:00000a90       _get_ebp                   00038a90 f   CORE_ENG_TR:MemCpyProtected.obj
+ 0002:00000a96       _get_previous_ebp          00038a96 f   CORE_ENG_TR:MemCpyProtected.obj
+ 0002:00000aa0       _get_stack_base            00038aa0 f   CORE_ENG_TR:MemCpyProtected.obj
+ 0002:00000aa9       _is_addr_in_stack          00038aa9 f   CORE_ENG_TR:MemCpyProtected.obj
+ 0002:00000b4d       _coreCopyMemory            00038b4d f   CORE_ENG_TR:CopyDataX.obj
+ 0002:00000be6       _InitializeComPort         00038be6 f   CORE_ENG_TR:Com.obj

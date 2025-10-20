@@ -332,24 +332,24 @@
      0                              <1> %imacro safeseh 1.nolist
      0                              <1> [safeseh %1]
      0                              <1> %endmacro 
-     0                              <1> %define __?DATE?__ "2024-08-22"
-     0                              <1>  ;;; %define __?DATE?__ "2024-08-22"
-     0                              <1> %define __?DATE_NUM?__ 20240822
-     0                              <1>  ;;; %define __?DATE_NUM?__ 20240822
-     0                              <1> %define __?TIME?__ "02:33:56"
-     0                              <1>  ;;; %define __?TIME?__ "02:33:56"
-     0                              <1> %define __?TIME_NUM?__ 023356
-     0                              <1>  ;;; %define __?TIME_NUM?__ 023356
-     0                              <1> %define __?UTC_DATE?__ "2024-08-22"
-     0                              <1>  ;;; %define __?UTC_DATE?__ "2024-08-22"
-     0                              <1> %define __?UTC_DATE_NUM?__ 20240822
-     0                              <1>  ;;; %define __?UTC_DATE_NUM?__ 20240822
-     0                              <1> %define __?UTC_TIME?__ "09:33:56"
-     0                              <1>  ;;; %define __?UTC_TIME?__ "09:33:56"
-     0                              <1> %define __?UTC_TIME_NUM?__ 093356
-     0                              <1>  ;;; %define __?UTC_TIME_NUM?__ 093356
-     0                              <1> %define __?POSIX_TIME?__ 1724319236
-     0                              <1>  ;;; %define __?POSIX_TIME?__ 1724319236
+     0                              <1> %define __?DATE?__ "2025-10-20"
+     0                              <1>  ;;; %define __?DATE?__ "2025-10-20"
+     0                              <1> %define __?DATE_NUM?__ 20251020
+     0                              <1>  ;;; %define __?DATE_NUM?__ 20251020
+     0                              <1> %define __?TIME?__ "11:05:43"
+     0                              <1>  ;;; %define __?TIME?__ "11:05:43"
+     0                              <1> %define __?TIME_NUM?__ 110543
+     0                              <1>  ;;; %define __?TIME_NUM?__ 110543
+     0                              <1> %define __?UTC_DATE?__ "2025-10-20"
+     0                              <1>  ;;; %define __?UTC_DATE?__ "2025-10-20"
+     0                              <1> %define __?UTC_DATE_NUM?__ 20251020
+     0                              <1>  ;;; %define __?UTC_DATE_NUM?__ 20251020
+     0                              <1> %define __?UTC_TIME?__ "18:05:43"
+     0                              <1>  ;;; %define __?UTC_TIME?__ "18:05:43"
+     0                              <1> %define __?UTC_TIME_NUM?__ 180543
+     0                              <1>  ;;; %define __?UTC_TIME_NUM?__ 180543
+     0                              <1> %define __?POSIX_TIME?__ 1760983543
+     0                              <1>  ;;; %define __?POSIX_TIME?__ 1760983543
      0                              <1> %define __?OUTPUT_FORMAT?__ win64
      0                              <1>  ;;; %define __?OUTPUT_FORMAT?__ win64
      0                              <1> %define __ASM__ 1

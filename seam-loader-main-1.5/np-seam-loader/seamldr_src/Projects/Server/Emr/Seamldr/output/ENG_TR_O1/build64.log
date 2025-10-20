@@ -1,0 +1,53 @@
+
+-------------------------------------------------------------------------------------
+ACM_PE2BINx: TXT ACM build tool (PE/COFF EXE -> ACM image), version 10.30 (May 31 2022), (for SKL and newer projects)
+Copyright (C) 2015-2021 Intel Corporation (internal use only).  All rights reserved.
+
+Processing ACM Main EXE PE32 file: C:\Users\jwhur\Downloads\seam-loader\seam-loader-main-1.5\np-seam-loader\seamldr_src\Projects\Server\Emr\Seamldr\..\\Seamldr\output\ENG_TR_O1\EMR_NP_SEAMLDR_ENG_TR_O1.exe
+Binary dump begins:
+
+     Section       Size (hex)      File_Offset (hex)         Saved/Skipped
+    =========      ==========      ================      =======================
+    Current output BIN32 file position : 00000000 
+    EDATA32         00037000           00000400           Saved to: C:\Users\jwhur\Downloads\seam-loader\seam-loader-main-1.5\np-seam-loader\seamldr_src\Projects\Server\Emr\Seamldr\..\\Seamldr\output\ENG_TR_O1\EMR_NP_SEAMLDR_ENG_TR_O1.bin
+    Current output BIN32 file position : 00037000 
+    .text           00001000           00036600           Saved to: C:\Users\jwhur\Downloads\seam-loader\seam-loader-main-1.5\np-seam-loader\seamldr_src\Projects\Server\Emr\Seamldr\..\\Seamldr\output\ENG_TR_O1\EMR_NP_SEAMLDR_ENG_TR_O1.bin
+    .comment        00000200           00037400           Skipped
+    .reloc          00000200           00037600           Skipped
+
+    StartOffset=0x0, EndOffset=0x37fff, biosAcmStart=0x370d8 (Size=0x38000 bytes)
+
+
+Processing ACM 64bit EXE PE32+ file: C:\Users\jwhur\Downloads\seam-loader\seam-loader-main-1.5\np-seam-loader\seamldr_src\Projects\Server\Emr\Seamldr\..\\Seamldr\output\ENG_TR_O1\EMR_NP_SEAMLDR64_ENG_TR_O1.exe
+Binary dump begins:
+
+     Section       Size (hex)      File_Offset (hex)         Saved/Skipped
+    =========      ==========      ================      =======================
+    Current output BIN32 file position : 00038000 
+    .data           00001000           00000400           Saved to: C:\Users\jwhur\Downloads\seam-loader\seam-loader-main-1.5\np-seam-loader\seamldr_src\Projects\Server\Emr\Seamldr\..\\Seamldr\output\ENG_TR_O1\EMR_NP_SEAMLDR_ENG_TR_O1.bin
+    Current output BIN32 file position : 00039000 
+    EDATA32         00003000           00000600           Saved to: C:\Users\jwhur\Downloads\seam-loader\seam-loader-main-1.5\np-seam-loader\seamldr_src\Projects\Server\Emr\Seamldr\..\\Seamldr\output\ENG_TR_O1\EMR_NP_SEAMLDR_ENG_TR_O1.bin
+    Current output BIN32 file position : 0003C000 
+    .text           00003000           00003200           Saved to: C:\Users\jwhur\Downloads\seam-loader\seam-loader-main-1.5\np-seam-loader\seamldr_src\Projects\Server\Emr\Seamldr\..\\Seamldr\output\ENG_TR_O1\EMR_NP_SEAMLDR_ENG_TR_O1.bin
+    .pdata          00000200           00005400           Skipped
+    .comment        00000400           00005600           Skipped
+    .reloc          00000200           00005A00           Skipped
+
+    StartOffset=0x38000, EndOffset=0x3efff, Entrypoint=0x3c000  (Size=0x3efff bytes)
+PE2BIN-ACM COM DATA values:
+	32-bit code start                   : 00037000
+	32-bit code end / 64-bit data start : 00038000
+	64-bit code start                   : 0003C000
+	64-bit code end                     : 0003EFFF
+
+Total # of relocations=142 (32bit EXE (PE32):141, 64bit EXE (PE32+):1)
+
+Total ACM filesize=258048 bytes   (=0x3f000 bytes)
+Conversion: C:\Users\jwhur\Downloads\seam-loader\seam-loader-main-1.5\np-seam-loader\seamldr_src\Projects\Server\Emr\Seamldr\..\\Seamldr\output\ENG_TR_O1\EMR_NP_SEAMLDR_ENG_TR_O1.exe + C:\Users\jwhur\Downloads\seam-loader\seam-loader-main-1.5\np-seam-loader\seamldr_src\Projects\Server\Emr\Seamldr\..\\Seamldr\output\ENG_TR_O1\EMR_NP_SEAMLDR64_ENG_TR_O1.exe -> C:\Users\jwhur\Downloads\seam-loader\seam-loader-main-1.5\np-seam-loader\seamldr_src\Projects\Server\Emr\Seamldr\..\\Seamldr\output\ENG_TR_O1\EMR_NP_SEAMLDR_ENG_TR_O1.bin completed  <<<===
+
+ITPII command (saved to ACM_LoadNocode.py):
+   load ... C:\Users\jwhur\Downloads\seam-loader\seam-loader-main-1.5\np-seam-loader\seamldr_src\Projects\Server\Emr\Seamldr\output\ENG_TR_O1\EMR_NP_SEAMLDR_ENG_TR_O1.exe ... at (BIOS_ACM_base - 0x00002000)
+
+ITPII command (saved to ACM_LoadNocode64.py):
+   load ... C:\Users\jwhur\Downloads\seam-loader\seam-loader-main-1.5\np-seam-loader\seamldr_src\Projects\Server\Emr\Seamldr\output\ENG_TR_O1\EMR_NP_SEAMLDR64_ENG_TR_O1.exe ... at (BIOS_ACM_base + 0x00037000)
+-------------------------------------------------------------------------------------
